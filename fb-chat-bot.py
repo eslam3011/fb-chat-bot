@@ -404,7 +404,7 @@ class ChatBot(Client):
                               thread_id=thread_id, thread_type=ThreadType.USER)
 
         def chatGPT(self, query):
-            openai.api_key = "YOUR_API_KEY"
+            openai.api_key = "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"
 
             response = openai.Completion.create(
                 model="text-davinci-003",
@@ -421,7 +421,7 @@ class ChatBot(Client):
 
             if ("search pdf" in msg):
                 searchFiles(self)
-            elif ("chatgpt" in msg):
+            elif ("ex 7" in msg):
                 query = " ".join(msg.split(" ")[1:])
                 reply = chatGPT(self, query)
                 sendQuery()
@@ -678,9 +678,9 @@ class ChatBot(Client):
 cookies = {
     "sb": "xasyYmAoy1tRpMGYvLxgkHBF",
     "fr": "0NxayJuewRHQ30OX3.AWVJwIYNh0Tt8AJv6kSwDamhkoM.BiMrVd.Iu.AAA.0.0.BiMtVZ.AWXMVaiHrpQ",
-    "c_user": "",
+    "c_user": "100089868288752",
     "datr": "xasyYs51GC0Lq5H5lvXTl5zA",
-    "xs": ""
+    "xs": "35%3AHsoZlpqqushLAg%3A2%3A1675627331%3A-1%3A-1"
 }
 
 
