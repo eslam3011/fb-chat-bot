@@ -404,7 +404,7 @@ class ChatBot(Client):
                               thread_id=thread_id, thread_type=ThreadType.USER)
 
         def chatGPT(self, query):
-            openai.api_key = key
+            openai.api_key = ${{shared.key}}
 
             response = openai.Completion.create(
                 model="text-davinci-003",
